@@ -26,7 +26,7 @@ Load Full LLM → High Memory Usage
 We use:
 
 Prompt → Router → Select Modules → Load On Demand → Generate Output
-
+```
 This reduces active memory footprint while maintaining practical inference performance.
 
 🧠 Core Idea
@@ -37,15 +37,15 @@ Traditional systems keep all parameters loaded.
 Our architecture loads only the required modules.
 
 Examples of functional modules:
-
+```text
 Module	Purpose
 💰 Finance	Market / stock / economics prompts
 🩺 Medical	Health / biomedical prompts
 💻 Technical	Coding / engineering prompts
 🌐 General	Common reasoning prompts
-
+```
 A lightweight router model determines which modules are required.
-
+```text
 ⚙️ System Pipeline
 ┌──────────────┐
 │ Input Prompt │
@@ -72,15 +72,24 @@ A lightweight router model determines which modules are required.
 ┌──────────────┐
 │ Final Output │
 └──────────────┘
+```
 ✨ Key Features
 ✅ Prompt-aware routing
+
 ✅ Selective module loading
+
 ✅ Lower peak memory footprint
+
 ✅ Baseline vs modular benchmarking
+
 ✅ Latency / RAM / throughput evaluation
+
 ✅ Reproducible research prototype
+
 ✅ Expandable modular architecture
+
 📂 Repository Structure
+```text
 dynamic-modular-llm-inference/
 │── main.py
 │── router.py
@@ -101,19 +110,28 @@ dynamic-modular-llm-inference/
 └── utils/
     ├── config.py
     └── memory.py
+```
 ⚙️ Installation
 1️⃣ Clone Repository
+```text
 git clone https://github.com/AnandRawat138/dynamic-modular-llm-inference.git
 cd dynamic-modular-llm-inference
+```
 2️⃣ Install Dependencies
+```text
 pip install torch transformers psutil pandas matplotlib
+```
 ▶️ Run Prototype
+```text
 python main.py
+```
 🧪 Run Benchmark Experiments
+```text
 python experiment.py
-
+```
 Evaluates:
 
+```text
 Latency comparison
 Memory usage
 Throughput
@@ -126,30 +144,30 @@ Accuracy	100%	98.8%
 Scalability	Moderate	High
 📈 Included Graphs
 Latency Comparison
-
+```
 results.png
-
 Memory Usage Comparison
-
 results_memory_graph.png
 
 🔬 Research Contribution
 
 This project explores an alternative to compute-sparsity systems such as Mixture-of-Experts.
-
+```text
 Traditional MoE:
 Fewer active parameters
 All experts often remain in memory
 Proposed Approach:
 Only selected modules loaded
 Lower active memory footprint
+```
 
 This makes the design attractive for:
-
+```text
 Edge devices
 Resource-limited servers
 Multi-tenant inference systems
 Memory-aware AI deployment
+```
 📄 Associated Research Paper
 
 Dynamic Modular Composition for Memory-Efficient Large Language Model Inference
@@ -160,23 +178,29 @@ Dynamic Modular Composition for Memory-Efficient Large Language Model Inference
   journal={Under Review},
   year={2026}
 }
+
 👨‍💻 Authors
+```text
 Anand Rawat
 Raghvendra Singh
 Sanjeev Kumar
 Nand Kishore Sharma
 Vipin Kumar Jaiswal
+```
 📜 License
 
 MIT License
 
 🔭 Future Roadmap
+```text
 🔹 Real HuggingFace adapter loading
 🔹 LoRA / PEFT integration
 🔹 GPU memory benchmarks
 🔹 Hybrid routing strategies
 🔹 Edge deployment optimization
 🔹 Multi-node serving support
+```
 🤝 Contributions
-
+```text
 Contributions, suggestions, forks, and collaborations are welcome.
+```
