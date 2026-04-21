@@ -1,0 +1,11 @@
+type,prompt,latency,ram
+modular,What is overfitting in machine learning?,1.494215965270996,0.07159042358398438
+modular,Summarize climate change impacts,4.58742618560791,-0.000274658203125
+modular,Write Python code for quicksort,8.784621715545654,0.0035552978515625
+modular,Explain neural networks,3.4446778297424316,-0.00168609619140625
+modular,Summarize artificial intelligence,10.725887775421143,0.001865386962890625
+baseline,What is overfitting in machine learning?,0.3381030559539795,0.010589599609375
+baseline,Summarize climate change impacts,4.476241827011108,0.022785186767578125
+baseline,Write Python code for quicksort,8.777016162872314,0.0546417236328125
+baseline,Explain neural networks,3.510639190673828,-0.0012359619140625
+baseline,Summarize artificial intelligence,11.459314107894897,0.044361114501953125
